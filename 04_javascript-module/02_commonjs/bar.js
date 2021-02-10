@@ -19,3 +19,7 @@ exports.name = name;
 exports.age = age;
 exports.sayHello = sayHello;
 
+// exports 是 commonjs 的规范
+// node 通过 module.export 实现这个规范
+// 本质上是 module.exports 在导出
+// module.exports = exports = 目标文件的require的对象
