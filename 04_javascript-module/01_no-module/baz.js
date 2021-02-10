@@ -1,0 +1,1 @@
+console.log(name); // 期望是“张三”
