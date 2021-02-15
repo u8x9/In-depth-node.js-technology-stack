@@ -16,3 +16,7 @@
 import * as foo from './modules/foo.js';
 console.log(foo.name, foo.age);
 foo.sayHello('赵敏');
+
+// 默认导出
+import fmt from './modules/foo.js';
+fmt();

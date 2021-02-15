@@ -27,3 +27,9 @@ export {
 //     age as fage,
 //     sayHello as fsayhello,
 // };
+
+// 默认导出
+// 在一个模块里面，只有有一个默认导出
+export default function () {
+    console.log('格式化操作');
+}
