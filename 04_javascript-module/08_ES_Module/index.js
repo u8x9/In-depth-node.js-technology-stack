@@ -20,3 +20,17 @@ foo.sayHello('赵敏');
 // 默认导出
 import fmt from './modules/foo.js';
 fmt();
+
+// es 标准没有  require
+// 但有 import 函数，注意区分关键字和函数
+// import函数返回的是一个 promise 对象
+let flag = true;
+if (flag) {
+    import('./modules/foo.js').then(reslove => {
+        console.log(reslove.name);
+        console.log(reslove.age);
+        reslove.sayHello('灭绝师太');
+    }).catch(e => {
+        console.log(e);
+    })
+}
